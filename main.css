@@ -1,0 +1,345 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(./font/Montserrat-Thin.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(./font/Montserrat-Regular.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(./font/Montserrat-Bold.ttf);
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+    font-weight: 300;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-section {
+    margin: 0;
+    width: 35%;
+    min-height: 100vh;
+    background-image: url(./image/left-section-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.title_name {
+    display: none;
+}
+
+.communications {
+    margin-top: 150px;
+}
+
+.photo img {
+    width: 190px;
+    height: 207px;
+    border: 10px solid white;
+    border-radius: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0 20px 0;
+    letter-spacing: 2px;
+}
+
+.contact-info {
+    margin-top: 60px;
+}
+
+.contact-info h1,
+.education h1,
+.skills-box h1,
+.aboutme h1,
+.experience h1 {
+    font-weight: 300;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin: 45px 0 45px 0;
+}
+
+.contact img {
+    width: 35px;
+    height: 35px;
+    margin: 15px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.skills-box {
+    padding: 60px 0 40px 0;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 65%;
+}
+
+.name {
+    margin-top: 120px;
+    width: 100%;
+    text-align: left;
+}
+
+.name h1 {
+    font-size: 80px;
+    font-weight: 400;
+    color: rgb(39, 38, 38);
+    border-bottom: 8px solid rgb(193, 214, 233);
+}
+
+.name h2 {
+    font-size: 40px;
+    font-weight: 300;
+    color: rgb(145, 144, 144);
+    padding-left: 15px;
+    text-align: left;
+}
+
+.container {
+    width: 80%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.container h1 {
+    color: rgb(122, 122, 224);
+}
+
+.position {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience h4,
+.experience h5 {
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
+.container p {
+    color: gray;
+}
+
+.position p {
+    color: rgb(122, 122, 224);
+}
+
+.media {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: end;
+    width: 80%;
+
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+}
+
+.social-media img {
+    width: 25px;
+    height: 25px;
+    margin: 25px;
+}
+
+@media (max-width: 1024px) {
+    .name h1 {
+        font-size: 60px;
+    }
+
+    .name h2 {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .name h1 {
+        font-size: 50px;
+    }
+
+    .name h2 {
+        font-size: 25px;
+    }
+
+    .contact-info h1,
+    .education h1,
+    .skills-box h1,
+    .aboutme h1,
+    .experience h1 {
+        letter-spacing: normal;
+        margin: 0;
+    }
+
+    .contact {
+        margin: 20px 0 20px 0;
+    }
+
+    .education {
+        align-items: center;
+        text-align: center;
+
+    }
+}
+
+@media (max-width:600px) {
+    main {
+        flex-direction: column;
+    }
+
+    .left-section {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .communications {
+        margin: 0 0 20px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .photo {
+        margin-top: 50px;
+    }
+
+    .contact {
+        margin: 0;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .education {
+        margin-bottom: 25px;
+    }
+
+    .skills-box {
+        display: none;
+    }
+
+    .right-section {
+        width: 100%;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .title_name {
+        display: unset;
+        margin-top: 30px;
+    }
+
+    .title_name h1 {
+        font-size: 50px;
+        font-weight: 400;
+        color: rgb(68, 67, 67);
+    }
+
+    .title_name h2 {
+        font-size: 30px;
+        font-weight: 300;
+        color: rgb(145, 144, 144);
+        text-align: left;
+    }
+
+    .container {
+        width: 90%;
+        margin: 30px;
+    }
+
+    .media {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+}
+
+@media (max-width:480px) {
+    .title_name h1 {
+        font-size: 40px;
+    }
+
+    .title_name h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .communications {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:320px) {
+    .position {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .media h3 {
+        display: none;
+    }
+
+}
